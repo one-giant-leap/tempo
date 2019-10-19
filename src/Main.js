@@ -26,12 +26,12 @@ const Main = props => {
         <TopAppBarRow>
           <TopAppBarSection alignStart>
             <TopAppBarNavigationIcon icon="menu" />
-            <TopAppBarTitle>All Features</TopAppBarTitle>
+            <TopAppBarTitle>Tempo</TopAppBarTitle>
           </TopAppBarSection>
           <TopAppBarSection alignEnd>
-            <TopAppBarActionItem icon="favorite" />
-            <TopAppBarActionItem icon="star" />
-            <TopAppBarActionItem icon="mood" />
+            <TopAppBarActionItem icon="info" />
+            {/*<TopAppBarActionItem icon="star" />
+            <TopAppBarActionItem icon="mood" />*/}
           </TopAppBarSection>
         </TopAppBarRow>
         {/*<TopAppBarRow>
@@ -44,7 +44,11 @@ const Main = props => {
       <Grid>
         <GridCell span={3}></GridCell>
         <GridCell span={3} desktop={6}>
-          <Person name={'Annelie Stephenson'} location={'Stoke, New Zealand'} image={'person_1.png'}/>
+          <Person
+            name={'Annelie Stephenson'}
+            location={'Stoke, New Zealand'}
+            description={'Registered patent attorney with 15 years experience across a range of industries. Available at the drop of a hat.'}
+            image={'person_1.png'}/>
           <br/>
           <Person
             name={'Ashlin Redpath'}
