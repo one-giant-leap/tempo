@@ -33,7 +33,7 @@ const star_rating = (
 const Hired = props => {
 
   return (
-    <Card style={{ width: '100%'/*'21rem'*/ }}>
+    <Card style={{ width: '21em' }}>
       <CardPrimaryAction>
         <CardMedia
           sixteenByNine

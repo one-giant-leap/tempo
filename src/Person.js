@@ -32,9 +32,8 @@ const star_rating = (
 
 const Person = props => {
 
-
   return (
-    <Card style={{ width: '100%'/*'21rem'*/ }}>
+    <Card style={{ width: '21em' }}>
       <CardPrimaryAction>
         <CardMedia
           sixteenByNine
@@ -60,11 +59,6 @@ const Person = props => {
             theme="textSecondaryOnBackground"
           >
             {star_rating}
-          {/*<Icon icon={{ icon: 'star', size: 'xlarge' }} />
-          <Icon icon={{ icon: 'star', size: 'xlarge' }} />
-          <Icon icon={{ icon: 'star', size: 'xlarge' }} />
-          <Icon icon={{ icon: 'star', size: 'xlarge' }} />
-        <Icon icon={{ icon: 'star_outline', size: 'xlarge' }}  />*/}
           </Typography>
           <Typography
             use="body1"

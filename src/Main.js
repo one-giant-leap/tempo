@@ -60,7 +60,7 @@ const Main = props => {
       <TopAppBarFixedAdjust />
       <Grid>
         <GridCell span={4}></GridCell>
-        <GridCell span={4} desktop={6}>
+        <GridCell span={6}>
           {(hired === 0) ? 
           <>
           <Person
@@ -80,19 +80,19 @@ const Main = props => {
             image={'person_2.png'}/>
           <br/>
           <Person 
-            name={'Hoani Takao'}
+            name={'Karene Scholzel'}
             onClick={handleClick}
             stars={5}
             location={'Nelson, New Zealand'}
-            description={'Registered Drainlayer, licensed machine operator - endorsed Class 1,2, W.T.R. Available over summer, open to flexible hours.'}
+            description={'Current Tertiary Student. Experience in retail and orchard labour. Available during the study break period from early November to late February.'}
             image={'person_3.png'}/>
           <br/>
           <Person
-            name={'Karene Scholzel'}
+            name={'Hoani Takao'}
             onClick={handleClick}
             stars={3}
             location={'Richmond, New Zealand'}
-            description={'Semi-retired, financial admin, accounts, edible landscape designer, project management. Available 2 days a week, flexible.'}
+            description={'Registered Drainlayer, licensed machine operator - endorsed Class 1,2, W.T.R. Available over summer, open to flexible hours.'}
             image={'person_4.png'}/>
           <br/>
           <Person
@@ -100,7 +100,7 @@ const Main = props => {
             onClick={handleClick}
             stars={5}
             location={'Stoke, New Zealand'}
-            description={'Current Tertiary Student. Experience in retail and orchard labour.  Available during the study break period from early November to late February.'}
+            description={'Semi-retired, financial admin, accounts, edible landscape designer, project management. Available 2 days a week, flexible.'}
             image={'person_5.png'}/> 
             </> :
           <Hired
