@@ -6,6 +6,7 @@
     "@rmwc/card": "^5.7.0",
     "@rmwc/grid": "^5.7.0",
     "@rmwc/icon": "^5.7.0",
+    "@rmwc/theme": "^5.7.0",
     "@rmwc/top-app-bar": "^5.7.0",
     "@rmwc/typography": "^5.7.1",
     "react": "^16.10.2",

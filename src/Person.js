@@ -33,7 +33,7 @@ const star_rating = (
 const Person = props => {
 
   return (
-    <Card style={{ width: '21em' }}>
+    <Card style={{ width: '100%' }}>
       <CardPrimaryAction>
         <CardMedia
           sixteenByNine
@@ -71,8 +71,8 @@ const Person = props => {
       </CardPrimaryAction>
       <CardActions>
         <CardActionButtons>
-          <CardActionButton onClick={() => props.onClick({name: props.name, image: props.image}) }>Hire</CardActionButton>
-          <CardActionButton>Contact</CardActionButton>
+          <CardActionButton onClick={() => props.onClick({name: props.name, image: props.image}) }>Hire Me</CardActionButton>
+          {/*<CardActionButton>Contact</CardActionButton>*/}
         </CardActionButtons>
         <CardActionIcons>
           <CardActionIcon onIcon="favorite" icon="favorite_border" />

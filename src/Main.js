@@ -43,7 +43,7 @@ const Main = props => {
         <TopAppBarRow>
           <TopAppBarSection alignStart>
             <TopAppBarNavigationIcon icon="menu" />
-            <TopAppBarTitle>Tempo</TopAppBarTitle>
+            <TopAppBarTitle>TEMPO</TopAppBarTitle>
           </TopAppBarSection>
           <TopAppBarSection alignEnd>
             <TopAppBarActionItem icon="info" />

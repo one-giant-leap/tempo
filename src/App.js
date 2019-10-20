@@ -2,9 +2,22 @@ import React from 'react';
 import Main from './Main';
 import './App.css';
 
+import { ThemeProvider } from '@rmwc/theme';
+
+import '@material/theme/dist/mdc.theme.css';
+
 function App() {
   return (
-    <Main/>
+    <ThemeProvider
+      options={{
+        primary: '#FF6600',
+        secondary: 'yellow',
+        onPrimary: 'yellow',
+        textPrimaryOnBackground: 'black'
+      }}
+    >
+      <Main/>
+    </ThemeProvider>
   );
 }
 
