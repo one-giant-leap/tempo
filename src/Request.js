@@ -30,10 +30,10 @@ const star_rating = (
     </>
   );
 
-const Hired = props => {
+const Request = props => {
 
   return (
-    <Card style={{ width: '21em' }}>
+    <Card style={{ width: '100%' }}>
       <CardPrimaryAction>
         <CardMedia
           sixteenByNine
@@ -43,7 +43,7 @@ const Hired = props => {
         />
         <div style={{ padding: '0 1rem 1rem 1rem' }}>
           <Typography use="headline6" tag="h2">
-            Congratulations!
+            A request has been sent
           </Typography>
           <Typography
             use="subtitle2"
@@ -70,13 +70,13 @@ const Hired = props => {
             tag="div"
             theme="textSecondaryOnBackground"
           >
-            You have hired {props.name}. Thank you for working with us.
+            A request to {props.name} has been sent.
           </Typography>
         </div>
       </CardPrimaryAction>
       <CardActions>
         <CardActionButtons>
-          <CardActionButton onClick={() => props.onClick() }>Return</CardActionButton>
+          <CardActionButton onClick={() => props.onClick()}></CardActionButton>
         </CardActionButtons>
         <CardActionIcons>
           {/*<CardActionIcon onIcon="favorite" icon="favorite_border" />
@@ -88,4 +88,4 @@ const Hired = props => {
   );
 };
 
-export default Hired;
+export default Request;

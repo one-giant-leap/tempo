@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Person from "./Person";
-import Hired from "./Hired";
+import Request from "./Request";
+import Congrats from "./Congrats";
 import {
   TopAppBar,
   TopAppBarRow,
@@ -32,6 +33,11 @@ const Main = props => {
     console.log('Hired clicked.');
   }
 
+  const handleCheck = () => {
+    setHired(2);
+    console.log('Check if employee is keen button has been pressed.');
+  }
+
   const handleReturn = () => {
     setHired(0);
     console.log('Return clicked');
@@ -51,11 +57,6 @@ const Main = props => {
             <TopAppBarActionItem icon="mood" />*/}
           </TopAppBarSection>
         </TopAppBarRow>
-        {/*<TopAppBarRow>
-          <TopAppBarSection alignStart>
-            <TopAppBarTitle>Another Row</TopAppBarTitle>
-          </TopAppBarSection>
-        </TopAppBarRow>*/}
       </TopAppBar>
       <TopAppBarFixedAdjust />
       <Grid>
@@ -102,8 +103,12 @@ const Main = props => {
             location={'Stoke, New Zealand'}
             description={'Semi-retired, financial admin, accounts, edible landscape designer, project management. Available 2 days a week, flexible.'}
             image={'person_5.png'}/> 
-            </> :
-          <Hired
+            </> : (hired === 1) ?
+          <Request
+            name={hiredName}
+            onClick={handleCheck}
+            image={hiredImage}/> :
+          <Congrats
             name={hiredName}
             onClick={handleReturn}
             image={hiredImage}/>

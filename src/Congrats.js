@@ -30,7 +30,7 @@ const star_rating = (
     </>
   );
 
-const Person = props => {
+const Congrats = props => {
 
   return (
     <Card style={{ width: '100%' }}>
@@ -43,7 +43,7 @@ const Person = props => {
         />
         <div style={{ padding: '0 1rem 1rem 1rem' }}>
           <Typography use="headline6" tag="h2">
-            {props.name}
+            Congratulations!
           </Typography>
           <Typography
             use="subtitle2"
@@ -51,7 +51,7 @@ const Person = props => {
             theme="textSecondaryOnBackground"
             style={{ marginTop: '-1rem' }}
           >
-            {props.location}
+            
           </Typography>
           <Typography
             use="body1"
@@ -59,24 +59,28 @@ const Person = props => {
             theme="textSecondaryOnBackground"
           >
             {star_rating}
+          {/*<Icon icon={{ icon: 'star', size: 'xlarge' }} />
+          <Icon icon={{ icon: 'star', size: 'xlarge' }} />
+          <Icon icon={{ icon: 'star', size: 'xlarge' }} />
+          <Icon icon={{ icon: 'star', size: 'xlarge' }} />
+        <Icon icon={{ icon: 'star_outline', size: 'xlarge' }}  />*/}
           </Typography>
           <Typography
             use="body1"
             tag="div"
             theme="textSecondaryOnBackground"
           >
-            {props.description}
+            You have hired {props.name}. Thank you for working with us.
           </Typography>
         </div>
       </CardPrimaryAction>
       <CardActions>
         <CardActionButtons>
-          <CardActionButton onClick={() => props.onClick({name: props.name, image: props.image}) }>Request Me</CardActionButton>
-          {/*<CardActionButton>Contact</CardActionButton>*/}
+          <CardActionButton onClick={() => props.onClick() }>Return</CardActionButton>
         </CardActionButtons>
         <CardActionIcons>
-          <CardActionIcon onIcon="favorite" icon="favorite_border" />
-          {/*<CardActionIcon icon="share" />*/}
+          {/*<CardActionIcon onIcon="favorite" icon="favorite_border" />
+          <CardActionIcon icon="share" />*/}
           <CardActionIcon icon="more_vert" />
         </CardActionIcons>
       </CardActions>
@@ -84,4 +88,4 @@ const Person = props => {
   );
 };
 
-export default Person;
+export default Congrats;
