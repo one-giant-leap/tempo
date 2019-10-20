@@ -55,18 +55,6 @@ const Request = props => {
           </Typography>
           <Typography
             use="body1"
-            tag="p"
-            theme="textSecondaryOnBackground"
-          >
-            {star_rating}
-          {/*<Icon icon={{ icon: 'star', size: 'xlarge' }} />
-          <Icon icon={{ icon: 'star', size: 'xlarge' }} />
-          <Icon icon={{ icon: 'star', size: 'xlarge' }} />
-          <Icon icon={{ icon: 'star', size: 'xlarge' }} />
-        <Icon icon={{ icon: 'star_outline', size: 'xlarge' }}  />*/}
-          </Typography>
-          <Typography
-            use="body1"
             tag="div"
             theme="textSecondaryOnBackground"
           >
