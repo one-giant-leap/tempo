@@ -68,8 +68,8 @@ const Request = props => {
         </CardActionButtons>
         <CardActionIcons>
           {/*<CardActionIcon onIcon="favorite" icon="favorite_border" />
-          <CardActionIcon icon="share" />*/}
-          <CardActionIcon icon="more_vert" />
+          <CardActionIcon icon="share" />
+        <CardActionIcon icon="more_vert" />*/}
         </CardActionIcons>
       </CardActions>
     </Card>
