@@ -59,8 +59,8 @@ const Main = props => {
       </TopAppBar>
       <TopAppBarFixedAdjust />
       <Grid>
-        <GridCell span={4}></GridCell>
-        <GridCell span={6}>
+        <GridCell span={3}></GridCell>
+        <GridCell align={"middle"} desktop={6} span={6}>
           {(hired === 0) ? 
           <>
           <Person
@@ -110,7 +110,7 @@ const Main = props => {
           }
 
         </GridCell>
-        <GridCell span={4}></GridCell>
+        <GridCell span={3}></GridCell>
       </Grid>
     </>
   );

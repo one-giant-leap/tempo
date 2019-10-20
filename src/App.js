@@ -11,8 +11,8 @@ function App() {
     <ThemeProvider
       options={{
         primary: '#FF6600',
-        secondary: 'yellow',
-        onPrimary: 'yellow',
+        secondary: 'white',
+        onPrimary: 'white',
         textPrimaryOnBackground: 'black'
       }}
     >
